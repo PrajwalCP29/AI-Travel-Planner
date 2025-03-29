@@ -1,41 +1,53 @@
 # 🌍 AI Travel Planner
 
-# 📌 Project Description
-AI Travel Planner is a Streamlit-based web app that helps users generate personalized travel itineraries using Google Gemini AI. Users can input their location, destination, budget, and trip duration to receive a detailed AI-generated travel plan that includes activities, food, and transport suggestions.
+**Plan your trips effortlessly with AI!** This AI-powered travel planner generates personalized itineraries based on your location, destination, duration, and budget.
 
-# 🚀 Features
-🏖️ AI-generated trip plans based on user preferences
-🗺️ User-friendly interface built with Streamlit
-📥 Downloadable itinerary as a text file
-🎨 Modern UI with custom styling
-🔐 Secure API key management (via .env file)
+## 🚀 Live Demo
+[Access the AI Travel Planner](https://ai-travel-planner-app.streamlit.app/)
 
-# 🛠️ Installation & Setup
-1. Clone the repository:
-   git clone https://github.com/PrajwalCP29/AI-Travel-Planner.git
-   cd AI-Travel-Planner
-2. Create a virtual environment (optional but recommended):
-   python -m venv venv
-   source venv/bin/activate  # Mac/Linux
-   venv\Scripts\activate  # Windows
+## 🛠️ Features
+- 🌎 Generates detailed travel itineraries
+- 💰 Budget-friendly recommendations
+- 🏨 Accommodation, food, and transport suggestions
+- 📥 Downloadable trip plans
+- 📍 User-friendly interface
+
+## 🖥️ Tech Stack
+- **Frontend**: Streamlit
+- **AI Model**: Google Gemini API
+- **Backend**: Python
+- **Deployment**: Streamlit Cloud
+
+## 📂 Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/ai-travel-planner.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd ai-travel-planner
+   ```
 3. Install dependencies:
+   ```bash
    pip install -r requirements.txt
-4. Set up API keys securely:
-   Create a .env file in the root directory and add your API key:
+   ```
+4. Set up API keys securely using an `.env` file:
+   ```
    GOOGLE_API_KEY=your_google_api_key
-   Load this key in your code using:
-   from dotenv import load_dotenv
-   import os
-   load_dotenv()
-   api_key = os.getenv("GOOGLE_API_KEY")
+   ```
 5. Run the app:
+   ```bash
    streamlit run app.py
+   ```
 
-# 🚀 Deployment on Streamlit Cloud
-   1.Push your code to GitHub.
-   2.Go to Streamlit Cloud and connect your repo.
-   3.Specify requirements.txt in the setup.
-   4.Deploy & enjoy! 🎉
+## 🔒 Security Considerations
+- **DO NOT** expose your API keys in the code.
+- Use an **`.env` file** and load it using `python-dotenv`.
+- Add `.env` to `.gitignore` before pushing to GitHub.
 
-# 📧 Contact
-For any issues or improvements, feel free to raise an issue or reach out at prajwalparihar292003@gmail.com
+## 🤝 Contributing
+Pull requests are welcome! Feel free to fork this project and enhance its features.
+
+## 📧 Contact
+For any inquiries, reach out via [LinkedIn](https://www.linkedin.com/in/prajwal-parihar-557586228/) or email at prajwalparihar292003@gmail.com
+
