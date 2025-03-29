@@ -10,21 +10,34 @@ st.set_page_config(page_title="AI Travel Planner", page_icon="🌍", layout="cen
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+    html[data-theme='light'] .title {
+        color: #000000 !important; /* Black for Light Mode */
+    }
+
+    html[data-theme='dark'] .title {
+        color: #FFFFFF !important; /* White for Dark Mode */
+    }
+
     .title {
         text-align: center;
         font-size: 50px !important;
-        font-weight: bold;
-        color: #FFFFFF !important;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif !important;
     }
+
     .subtitle {
         text-align: center;
         font-size: 18px;
         color: #555;
     }
+
     .stTextInput, .stNumberInput {
         border: 2px solid #FF5733 !important;
         border-radius: 10px;
     }
+
     .stButton > button {
         background-color: #FF5733 !important;
         color: white !important;
