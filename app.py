@@ -1,7 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
 
-# Load API key securely from Streamlit Secrets
 genai.configure(api_key=st.secrets["google"]["api_key"])
 
 # Custom Page Config
